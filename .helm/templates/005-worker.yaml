@@ -17,5 +17,5 @@ spec:
       imagePullSecrets:
         - name: regsecret
       containers:
-      - image: {{ tuple "worker" . | include "werf_image" }}
+      - image: {{ .Values.werf.image.worker }}
         name: worker
