@@ -17,7 +17,7 @@ spec:
       imagePullSecrets:
         - name: regsecret
       containers:
-      - image: {{ tuple "result" . | include "werf_image" }}
+      - image: {{ .Values.werf.image.result }}
         name: result
         ports:
         - containerPort: 80
