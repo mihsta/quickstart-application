@@ -15,7 +15,7 @@ spec:
         app: db
     spec:
       containers:
-      - image: postgres:9.4
+      - image: quay.io/flanteurope/werf-quickstart-application:postgres-9.4
         name: postgres
         env:
         - name: POSTGRES_USER
