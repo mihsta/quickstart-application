@@ -30,11 +30,8 @@ metadata:
     app: result
   name: result
 spec:
-  type: NodePort
   ports:
   - name: "result-service"
-    port: 5001
-    targetPort: 80
-    nodePort: 31161
+    port: 80
   selector:
     app: result
