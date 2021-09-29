@@ -15,7 +15,7 @@ spec:
         app: redis
     spec:
       containers:
-      - image: quay.io/flanteurope/werf-quickstart-application:redis-alpine
+      - image: ghcr.io/werf/quickstart-application/redis:alpine
         name: redis
         ports:
         - containerPort: 6379
