@@ -15,7 +15,7 @@ spec:
         app: vote
     spec:
       imagePullSecrets:
-        - name: regsecret
+        - name: registrysecret
       containers:
       - image: {{ .Values.werf.image.vote }}
         name: vote

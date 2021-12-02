@@ -15,7 +15,7 @@ spec:
         app: result
     spec:
       imagePullSecrets:
-        - name: regsecret
+        - name: registrysecret
       containers:
       - image: {{ .Values.werf.image.result }}
         name: result
